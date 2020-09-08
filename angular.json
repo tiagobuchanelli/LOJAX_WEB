@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "LojaxWeb"
+    }
+  },
+  "defaultProject": "LojaxWeb",
+  "cli": {
+    "analytics": "ef5f1553-198e-4b9a-93c8-5d92442c05df"
+  }
 }
