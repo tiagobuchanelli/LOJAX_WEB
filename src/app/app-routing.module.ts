@@ -4,18 +4,19 @@ import { FramePageComponent } from './pages/master/frame-page/frame-page.compone
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
+import { HomePageComponent } from './pages/store/home-page/home-page.component';
 
 const routes: Routes = [
-  /*{
+  {
     path: '',
     component: FramePageComponent,
-    canActivate: [AuthService],
+    //canActivate: [AuthService],
     children: [
-      { path: '', component: ProductsPageComponent },
-      { path: 'cart', component: CartPageComponent },
-      { path: 'checkout', component: CheckoutPageComponent }
+      { path: '', component: HomePageComponent },
+      //{ path: 'cart', component: CartPageComponent },
+      //{ path: 'checkout', component: CheckoutPageComponent }
     ]
-  },*/
+  },
   {
     path: 'account',
     component: FramePageComponent,

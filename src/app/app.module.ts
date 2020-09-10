@@ -11,7 +11,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
-import { FramePageComponent } from './pages/master/frame-page/frame-page.component'
+import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
+import { HomePageComponent } from './pages/store/home-page/home-page.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FramePageComponent } from './pages/master/frame-page/frame-page.compone
     LoginPageComponent,
     ResetPasswordPageComponent,
     SignupPageComponent,
-    FramePageComponent
+    FramePageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
