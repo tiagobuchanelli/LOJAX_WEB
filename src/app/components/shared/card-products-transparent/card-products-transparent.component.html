@@ -1,0 +1,30 @@
+<div>
+  <div
+    class="uk-card uk-card-hover uk-margin-small-bottom uk-margin-small-top uk-margin-small-left uk-margin-small-right">
+    <div class="uk-card-media-top uk-text-center">
+      <img
+        src="https://a-static.mlcdn.com.br/210x210/smartphone-samsung-galaxy-a10s-32gb-azul-4g-2gb-ram-62-cam-dupla-selfie-8mp/magazineluiza/155568300/45129e74bbe4c46a88360e2f4a13f08d.jpg"
+        class="uk-margin-top uk-border-rounded" width="180" height="200" alt="Border rounded">
+    </div>
+    <div class="uk-card-body">
+      <p class="max-lines uk-text-secondary">
+        Smartphone Samsung Galaxy A10s 32G
+      </p>
+
+      <p style="line-height:1.0">
+        <span class="max-lines uk-text-muted  uk-text-small">De: {{ (699.90/100) | currency: 'BRL' }}</span>
+        <span
+          class="max-lines uk-text-bolder uk-text-secondary  uk-text-large">{{ 699.90/100 | currency: 'BRL' }}</span>
+        <span class="max-lines uk-text-secondary  uk-text-small">10x de
+          {{ ((699.90/100) / 10) | currency: 'BRL' }}</span>
+      </p>
+
+
+      <button class="uk-button uk-button-default uk-button-small uk-width-1-1">
+        <span class=" uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
+        Adicionar
+      </button>
+    </div>
+  </div>
+  <br>
+</div>

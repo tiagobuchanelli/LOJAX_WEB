@@ -15,7 +15,9 @@ import { LoginPageComponent } from './pages/account/login-page/login-page.compon
 import { ResetPasswordPageComponent } from './pages/account/reset-password-page/reset-password-page.component';
 import { SignupPageComponent } from './pages/account/signup-page/signup-page.component';
 import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
-import { HomePageComponent } from './pages/store/home-page/home-page.component'
+import { HomePageComponent } from './pages/store/home-page/home-page.component';
+import { CardProductsDefaultComponent } from './components/shared/card-products-default/card-products-default.component';
+import { CardProductsTransparentComponent } from './components/shared/card-products-transparent/card-products-transparent.component'
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { HomePageComponent } from './pages/store/home-page/home-page.component'
     ResetPasswordPageComponent,
     SignupPageComponent,
     FramePageComponent,
-    HomePageComponent
+    HomePageComponent,
+    CardProductsDefaultComponent,
+    CardProductsTransparentComponent
   ],
   imports: [
     BrowserModule,
