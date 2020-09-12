@@ -17,7 +17,16 @@ import { SignupPageComponent } from './pages/account/signup-page/signup-page.com
 import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
 import { HomePageComponent } from './pages/store/home-page/home-page.component';
 import { CardProductsDefaultComponent } from './components/shared/card-products-default/card-products-default.component';
-import { CardProductsTransparentComponent } from './components/shared/card-products-transparent/card-products-transparent.component'
+import { CardProductsTransparentComponent } from './components/shared/card-products-transparent/card-products-transparent.component';
+import { ProductsSmartphonesPageComponent } from './pages/store/products-smartphones-page/products-smartphones-page.component';
+import { ProductsTvVideoPageComponent } from './pages/store/products-tv-video-page/products-tv-video-page.component';
+import { ProductsComputersPageComponent } from './pages/store/products-computers-page/products-computers-page.component';
+import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
+import { ProfilePageComponent } from './pages/account/profile-page/profile-page.component';
+import { NavBarStoreComponent } from './nav-bar-store/nav-bar-store.component';
+import { FramePageStoreComponent } from './pages/master/frame-page-store/frame-page-store.component';
+import { HomeDashboardPageComponent } from './pages/dashboard/home-dashboard-page/home-dashboard-page.component';
+
 
 
 @NgModule({
@@ -30,7 +39,15 @@ import { CardProductsTransparentComponent } from './components/shared/card-produ
     FramePageComponent,
     HomePageComponent,
     CardProductsDefaultComponent,
-    CardProductsTransparentComponent
+    CardProductsTransparentComponent,
+    ProductsSmartphonesPageComponent,
+    ProductsTvVideoPageComponent,
+    ProductsComputersPageComponent,
+    CartPageComponent,
+    ProfilePageComponent,
+    NavBarStoreComponent,
+    FramePageStoreComponent,
+    HomeDashboardPageComponent,
   ],
   imports: [
     BrowserModule,
