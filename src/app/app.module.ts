@@ -60,6 +60,7 @@ import { UsersAddComponent } from './pages/dashboard/users-add/users-add.compone
 import { CostumersAddComponent } from './pages/dashboard/costumers-add/costumers-add.component';
 import { MyAccountComponent } from './pages/dashboard/my-account/my-account.component';
 import { SettingsComponent } from './pages/dashboard/settings/settings.component';
+import { CardProductsCustomComponent } from './components/shared/card-products-custom/card-products-custom.component';
 
 
 
@@ -116,6 +117,7 @@ import { SettingsComponent } from './pages/dashboard/settings/settings.component
     CostumersAddComponent,
     MyAccountComponent,
     SettingsComponent,
+    CardProductsCustomComponent,
   ],
   imports: [
     BrowserModule,

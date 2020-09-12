@@ -1,5 +1,5 @@
 <div class="uk-background-secondary uk-light" uk-sticky="bottom: #offset">
-  <div class="uk-container">
+  <div class="uk-margin-small-left uk-margin-small-right">
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
       <div class="uk-navbar-left uk-visible@m">
         <a class="uk-navbar-item uk-logo" href="/dashboard">
@@ -98,7 +98,7 @@
               <div class="uk-inline">
                 <button class="uk-button uk-button-default" type="button"><span
                     uk-icon="icon:  triangle-down"></span></button>
-                <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
+                <div uk-dropdown="pos: bottom-left">
                   <ul class="uk-nav uk-dropdown-nav">
                     <li><a [routerLink]="['/dashboard/my-account']">Minha conta</a></li>
                     <li><a [routerLink]="['/dashboard/settings']">Configurações</a></li>
