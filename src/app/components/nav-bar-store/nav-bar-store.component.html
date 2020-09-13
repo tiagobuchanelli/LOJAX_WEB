@@ -3,11 +3,11 @@
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
       <div class="uk-navbar-left uk-visible@m">
         <a class="uk-navbar-item uk-logo" href="/dashboard">
-          DASHBOARD
+          Dashboard
         </a>
         <ul class="uk-navbar-nav">
           <li>
-            <a>
+            <a class="uk-text-capitalize">
               Financeiro <span class="uk-icon uk-margin-small-left" uk-icon="icon: triangle-down"></span>
 
             </a>
@@ -15,39 +15,21 @@
               <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold">Cadastros</li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize">Cadastros</li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                    <li><a [routerLink]="['/dashboard/costumers']">Clientes</a></li>
-                    <li><a [routerLink]="['/dashboard/users']">Usuários</a></li>
-                    <li><a [routerLink]="['/dashboard/payment']">Formas de Pagamento</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/costumers']">Clientes</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/users']">Usuários</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/payment']">Formas de Pagamento</a></li>
                   </ul>
                 </div>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold">Relatórios</li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize">Relatórios</li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                    <li><a [routerLink]="['/dashboard/balance']">Balanço</a></li>
-                    <li><a [routerLink]="['/dashboard/finance-ar']">Contas a Receber</a></li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-          </li>
-          <li>
-            <a>Faturamento<span class="uk-icon uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
-            <div class="uk-width-large" uk-dropdown>
-              <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
-                <div>
-                  <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold">Relatórios</li>
-                    <li class="uk-nav-divider"></li>
-                    <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                    <li><a [routerLink]="['/dashboard/sales']">Vendas</a></li>
-                    <li><a [routerLink]="['/dashboard/sales-by-costumers']">Vendas Por Cliente</a></li>
-                    <li><a [routerLink]="['/dashboard/charts']">Gráficos</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/balance']">Balanço</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/finance-ar']">Contas a Receber</a></li>
                   </ul>
                 </div>
 
@@ -55,26 +37,50 @@
             </div>
           </li>
           <li>
-            <a>Estoque <span class="uk-icon uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
+            <a class="uk-text-capitalize">Faturamento<span class="uk-icon uk-margin-small-left"
+                uk-icon="icon: triangle-down"></span></a>
             <div class="uk-width-large" uk-dropdown>
               <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold">Cadastros</li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize">Relatórios</li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                    <li><a [routerLink]="['/dashboard/products']">Produtos</a></li>
-                    <li><a [routerLink]="['/dashboard/products-category']">Categorias</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/sales']">Vendas</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/sales-by-costumers']">Vendas Por
+                        Cliente</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/charts']">Gráficos</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="uk-text-capitalize">Estoque <span class="uk-icon uk-margin-small-left"
+                uk-icon="icon: triangle-down"></span></a>
+            <div class="uk-width-large" uk-dropdown>
+              <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                <div>
+                  <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize">Cadastros</li>
+                    <li class="uk-nav-divider"></li>
+                    <!--<li class="uk-active"><a href="#">Active</a></li>-->
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/products']">Produtos</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/products-category']">Categorias</a>
+                    </li>
                   </ul>
                 </div>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold">Relatórios</li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize">Relatórios</li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                    <li><a [routerLink]="['/dashboard/products-stock']">Inventário</a></li>
-                    <li><a [routerLink]="['/dashboard/products-stock-mov']">Movimentação</a></li>
-                    <li><a [routerLink]="['/dashboard/products-inactive']">Produtos Inativos</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/products-stock']">Inventário</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/products-stock-mov']">Movimentação</a>
+                    </li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/products-inactive']">Produtos
+                        Inativos</a></li>
                   </ul>
                 </div>
 
@@ -90,7 +96,7 @@
         <ul class="uk-navbar-nav">
           <li>
             <a [routerLink]="['/']">
-              <button class="uk-button uk-button-default">Voltar para o site</button>
+              <button class="uk-button uk-button-default uk-text-capitalize">Voltar para o site</button>
             </a>
           </li>
           <li>
@@ -100,9 +106,9 @@
                     uk-icon="icon:  triangle-down"></span></button>
                 <div uk-dropdown="pos: bottom-left">
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li><a [routerLink]="['/dashboard/my-account']">Minha conta</a></li>
-                    <li><a [routerLink]="['/dashboard/settings']">Configurações</a></li>
-                    <li><a [routerLink]="['/login']">Sair</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/my-account']">Minha conta</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/dashboard/settings']">Configurações</a></li>
+                    <li><a class="uk-text-capitalize" [routerLink]="['/login']">Sair</a></li>
                   </ul>
                 </div>
               </div>

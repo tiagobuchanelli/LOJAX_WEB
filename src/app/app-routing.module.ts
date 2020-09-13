@@ -46,6 +46,8 @@ import { UsersAddComponent } from './pages/dashboard/users-add/users-add.compone
 import { CostumersAddComponent } from './pages/dashboard/costumers-add/costumers-add.component';
 import { MyAccountComponent } from './pages/dashboard/my-account/my-account.component';
 import { SettingsComponent } from './pages/dashboard/settings/settings.component';
+import { ProductDetailsPageComponent } from './pages/store/product-details-page/product-details-page.component';
+import { FourZeroFourComponent } from './components/four-zero-four/four-zero-four.component';
 
 
 
@@ -56,7 +58,7 @@ const routes: Routes = [
     //canActivate: [AuthService],
     children: [
       { path: '', component: HomePageComponent },
-
+      { path: 'p/:name/:id', component: ProductDetailsPageComponent }
     ]
   },
 
@@ -70,6 +72,7 @@ const routes: Routes = [
       { path: 'casa', component: ProductsHomeAllComponent },
       { path: 'smartphones-e-comunicacao', component: ProductsWirelessAllComponent },
       { path: 'eletronicos', component: ProductsElectronicsAllComponent },
+
     ]
   },
 
@@ -102,13 +105,15 @@ const routes: Routes = [
     children: [
       { path: '', component: ProfilePageComponent },
       { path: 'cart', component: CartPageComponent },
-      //{ path: 'pets', component: PetsPageComponent },
     ]
+
   },
 
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: SignupPageComponent },
   { path: 'reset-password', component: ResetPasswordPageComponent },
+
+
   {
     path: 'dashboard',
     component: FramePageStoreComponent,
@@ -137,6 +142,18 @@ const routes: Routes = [
 
     ]
   },
+
+  /*Página 404*/
+  {
+    path: '',
+    component: FramePageComponent,
+    //canActivate: [AuthService],
+    children: [
+      { path: '**', component: FourZeroFourComponent },
+
+    ]
+  },
+
 ];
 
 @NgModule({

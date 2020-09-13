@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-products-default',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProductsDefaultComponent implements OnInit {
 
-  constructor() { }
+  //@Input() productId: any;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+
   }
+
+  viewDetails() {
+    this.router.navigate(['/p/tv-4k/01']);
+  }
+
+
+
 
 }

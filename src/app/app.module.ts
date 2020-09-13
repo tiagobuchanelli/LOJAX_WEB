@@ -61,6 +61,8 @@ import { CostumersAddComponent } from './pages/dashboard/costumers-add/costumers
 import { MyAccountComponent } from './pages/dashboard/my-account/my-account.component';
 import { SettingsComponent } from './pages/dashboard/settings/settings.component';
 import { CardProductsCustomComponent } from './components/shared/card-products-custom/card-products-custom.component';
+import { ProductDetailsPageComponent } from './pages/store/product-details-page/product-details-page.component';
+import { FourZeroFourComponent } from './components/four-zero-four/four-zero-four.component';
 
 
 
@@ -118,6 +120,8 @@ import { CardProductsCustomComponent } from './components/shared/card-products-c
     MyAccountComponent,
     SettingsComponent,
     CardProductsCustomComponent,
+    ProductDetailsPageComponent,
+    FourZeroFourComponent,
   ],
   imports: [
     BrowserModule,

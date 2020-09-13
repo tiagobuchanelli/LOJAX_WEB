@@ -3,16 +3,18 @@
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
       <div class="uk-navbar-left uk-visible@m">
         <a class="uk-navbar-item uk-logo" href="/">
-          LOJAX
+          Loja X
         </a>
         <ul class="uk-navbar-nav">
           <li>
-            <a>Departamentos <span class="uk-icon uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
+            <a class="uk-text-capitalize">Departamentos <span class="uk-icon uk-margin-small-left"
+                uk-icon="icon: triangle-down"></span></a>
             <div class="uk-width-1-2" uk-dropdown>
               <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold"><a [routerLink]="['/c/casa']">Casa</a></li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize"><a [routerLink]="['/c/casa']">Casa</a>
+                    </li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
                     <li><a [routerLink]="['/sc/eletrodomesticos']">Eletrodomésticos</a></li>
@@ -22,9 +24,10 @@
                   </ul>
                 </div>
                 <div>
-                  <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold"><a [routerLink]="['/c/smartphones-e-comunicacao']">Celulares
-                        e Comunicação</a></li>
+                  <ul class="uk-nav uk-dropdown-nav ">
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize"><a
+                        [routerLink]="['/c/smartphones-e-comunicacao']">Celulares
+                        & Comunicação</a></li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
                     <li><a [routerLink]="['/sc/celulares-e-smartphones']">Celulares e Smartphones</a></li>
@@ -35,7 +38,8 @@
                 </div>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold"><a [routerLink]="['/c/eletronicos']">Eletronicos</a></li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize"><a
+                        [routerLink]="['/c/eletronicos']">Eletronicos</a></li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
                     <li><a [routerLink]="['/sc/tv-e-video']">TVs</a></li>
@@ -44,7 +48,8 @@
                 </div>
                 <div>
                   <ul class="uk-nav uk-dropdown-nav">
-                    <li class="uk-nav-header uk-text-bold"><a [routerLink]="['/c/informatica']">Informática</a></li>
+                    <li class="uk-nav-header uk-text-bold uk-text-capitalize"><a
+                        [routerLink]="['/c/informatica']">Informática</a></li>
                     <li class="uk-nav-divider"></li>
                     <!--<li class="uk-active"><a href="#">Active</a></li>-->
                     <li><a [routerLink]="['/sc/notebooks']">Notebooks</a></li>
@@ -56,9 +61,9 @@
               </div>
             </div>
           </li>
-          <li><a [routerLink]="['/sc/celulares-e-smartphones']">Celulares</a></li>
-          <li><a [routerLink]="['/sc/tv-e-video']">Tv e Vídeo</a></li>
-          <li><a [routerLink]="['/c/informatica']">Informática</a></li>
+          <li><a class="uk-text-capitalize" [routerLink]="['/sc/celulares-e-smartphones']">Smarphones</a></li>
+          <li><a class="uk-text-capitalize" [routerLink]="['/sc/tv-e-video']">Tv & Vídeo</a></li>
+          <li><a class="uk-text-capitalize" [routerLink]="['/c/informatica']">Informática</a></li>
 
 
         </ul>
@@ -68,7 +73,7 @@
         <ul class="uk-navbar-nav">
           <li>
             <a [routerLink]="['/dashboard']">
-              <button class="uk-button uk-button-default">Dashboard</button>
+              <button class="uk-button uk-button-default uk-text-capitalize">Dashboard</button>
             </a>
           </li>
           <li>
@@ -78,7 +83,7 @@
           </li>
 
           <li>
-            <a [routerLink]="['/account']">
+            <a class="uk-text-capitalize" [routerLink]="['/account']">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: user"></span>
               Nome
             </a>
