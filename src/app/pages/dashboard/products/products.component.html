@@ -1,1 +1,61 @@
-<p>products works!</p>
+<div class="uk-container uk-margin-top">
+  <nav class="uk-navbar-container " uk-navbar>
+    <div class="uk-navbar-left uk-margin-small-left ">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active uk-text-large">Produtos Cadastrados</li>
+      </ul>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active">
+          <a>
+            <!--(click)="clear()"-->
+            <button class="uk-button uk-button-default uk-text-capitalize" type="button">
+              Filtrar &nbsp;&nbsp; <span uk-icon="icon:  settings; ratio: 0.8"></span></button>
+          </a>
+        </li>
+        <li class="uk-active">
+          <a [routerLink]="['/dashboard/products-add']">
+            <!--(click)="clear()"-->
+            <button class="uk-button uk-button-default uk-text-capitalize" type="button">
+              Novo &nbsp;&nbsp; <span uk-icon="icon:  plus; ratio: 0.8"></span></button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <table class="uk-table uk-table-striped">
+    <thead>
+      <tr>
+        <th class="uk-text-capitalize">Produto</th>
+        <th class="uk-text-capitalize">Categoria</th>
+        <th class="uk-text-capitalize">Marca/Modelo</th>
+        <th class="uk-width-small uk-text-capitalize"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tv 55 Polegadas</td>
+        <td>TV & Vídeo</td>
+        <td>Samgung</td>
+        <td><button class="uk-button uk-button-default uk-text-capitalize" type="button">Editar</button></td>
+
+      </tr>
+      <tr>
+        <td>Tv 65 Polegadas</td>
+        <td>TV & Vídeo</td>
+        <td>LG</td>
+        <td><button class="uk-button uk-button-default uk-text-capitalize" type="button">Editar</button></td>
+
+      </tr>
+      <tr>
+        <td>Notebook Acer</td>
+        <td>Informática</td>
+        <td>Acer</td>
+        <td><button class="uk-button uk-button-default uk-text-capitalize" type="button">Editar</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

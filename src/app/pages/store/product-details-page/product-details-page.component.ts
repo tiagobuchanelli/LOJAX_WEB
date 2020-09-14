@@ -12,6 +12,7 @@ export class ProductDetailsPageComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+
     console.log(this.route.snapshot.paramMap.get('name'));
     console.log(this.route.snapshot.paramMap.get('id'));
   }

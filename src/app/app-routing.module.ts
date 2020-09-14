@@ -157,7 +157,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })], //HABILITA A ABERTURA DA PÁGINA SEMPRE NO TOPO: { scrollPositionRestoration: 'enabled' }
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

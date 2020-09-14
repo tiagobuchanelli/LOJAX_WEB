@@ -63,6 +63,7 @@ import { SettingsComponent } from './pages/dashboard/settings/settings.component
 import { CardProductsCustomComponent } from './components/shared/card-products-custom/card-products-custom.component';
 import { ProductDetailsPageComponent } from './pages/store/product-details-page/product-details-page.component';
 import { FourZeroFourComponent } from './components/four-zero-four/four-zero-four.component';
+import { RouterModule } from '@angular/router';
 
 
 
